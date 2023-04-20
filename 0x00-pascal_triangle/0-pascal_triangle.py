@@ -4,7 +4,7 @@
 
 def pascal_triangle(n):
     """python technical interview"""
-    if n <= 0:
+    if n <= 0 or !n:
         return []
 
     lst_int = []
