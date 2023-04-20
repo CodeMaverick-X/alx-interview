@@ -8,8 +8,7 @@ def pascal_triangle(n):
         return []
 
     lst_int = []
-
     for num in range(n):
-        var = list(str(11 ** num))
+        var = [int(x) for x in list(str(11 ** num))]
         lst_int += [var]
     return lst_int
