@@ -5,8 +5,8 @@ from math import factorial
 
 def pascal_triangle(n):
     # """python technical interview"""
-    # if n <= 0 or not n:
-    #   return []
+    if n <= 0 or not n:
+        return []
 
     # lst_int = []
     #  for num in range(n):
