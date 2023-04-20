@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """pascal's triangle technical interview"""
-# from math import factorial
 
 
 def pascal_triangle(n):
-    # """python technical interview"""
+    """python technical interview"""
     if n <= 0 or not n:
         return []
 
