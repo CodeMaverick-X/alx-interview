@@ -1,14 +1,24 @@
 #!/usr/bin/python3
-"""pascal's triangle technical interview"""
+"""
+Pascal's Triangle modile water
+"""
 
 
 def pascal_triangle(n):
-    """python technical interview"""
-    if n <= 0 or not n:
+    """computes
+    """
+    if n <= 0:
         return []
+    triangle = [[1]]
+    idx = 0
 
-    lst_int = []
-    for num in range(n):
-        var = [int(x) for x in list(str(11 ** num))]
-        lst_int += [var]
-    return lst_int
+    for i in range(1, n):
+        prev = triangle[idx]
+        row = [1]
+        for j in range(1, len(prev)):
+            row.append(prev[j-1] + prev[j])
+        row.append(1)
+        idx += 1
+        triangle.append(row)
+    return triangle
+
