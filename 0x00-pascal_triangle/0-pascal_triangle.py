@@ -13,15 +13,3 @@ def pascal_triangle(n):
       var = [int(x) for x in list(str(11 ** num))]
       lst_int += [var]
     return lst_int
-
-    # lst_int = []
-
-    # for i in range(n):
-
-    #     row = []
-    #     for j in range(i+1):
-
-    #         # nCr = n!/((n-r)!*r!)
-    #         row += [factorial(i)//(factorial(j)*factorial(i-j))]
-    #     lst_int += [row]
-    # return lst_int
