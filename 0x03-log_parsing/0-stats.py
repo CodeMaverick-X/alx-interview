@@ -23,11 +23,13 @@ try:
         if count == 10:
             print('File size: {}'.format(file_size))
             for code, c in codes.items():
-                print('{}: {}'.format(code, c))
+                if c > 0:
+                    print('{}: {}'.format(code, c))
             count = 0
 except KeyboardInterrupt:
     print('File size: {}'.format(file_size))
     for code, c in codes.items():
-        print('{}: {}'.format(code, c))
+        if c > 0:
+            print('{}: {}'.format(code, c))
     count = 0
     raise KeyboardInterrupt
