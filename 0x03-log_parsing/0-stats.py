@@ -4,6 +4,7 @@ parse log from stdin
 """
 import sys
 import re
+import traceback
 
 count = 0
 file_size = 0
@@ -33,4 +34,4 @@ if __name__ == "__main__":
             if c > 0:
                 print('{}: {}'.format(code, c))
         count = 0
-        raise KeyboardInterrupt
+        traceback.print_exc()
