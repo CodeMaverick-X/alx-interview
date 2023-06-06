@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-rotate 2D matrix in state
-"""
+"""rotate 2D matrix in state"""
 
 
 def rotate_2d_matrix(matrix):
