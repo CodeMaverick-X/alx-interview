@@ -6,10 +6,33 @@ island_perimeter = __import__('0-island_perimeter').island_perimeter
 
 if __name__ == "__main__":
     grid = [
-        [0, 0, 0, 0, 0, 0],
         [0, 1, 0, 0, 0, 0],
         [0, 1, 0, 0, 0, 0],
-        [0, 1, 1, 1, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 1, 1, 1, 1, 1],
         [0, 0, 0, 0, 0, 0]
     ]
-    print(island_perimeter(grid))
+    grid2 = [
+            [0, 1, 0, 0, 0, 1],
+            [1, 1, 0, 0, 0, 1],
+            [1, 1, 0, 1, 1, 1],
+            [0, 1, 1, 1, 0, 0],
+            [0, 0, 1, 1, 0, 0]
+    ]
+    grid3 = [
+            [0, 0, 0, 0, 0, 0],
+            [0, 1, 1, 0, 0, 0],
+            [1, 1, 1, 0, 0, 0],
+            [0, 1, 1, 1, 0, 0],
+            [0, 0, 0, 1, 1, 1]
+    ]
+    grid4 = [
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1],
+            [1, 1, 1, 1, 1]
+    ]
+
+    print(island_perimeter(grid), 18)
+    print(island_perimeter(grid2))
+    print(island_perimeter(grid3))
+    print(island_perimeter(grid4), 16)

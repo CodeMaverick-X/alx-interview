@@ -19,7 +19,7 @@ def island_perimeter(grid):
                 if (row + 1 <= (len_grid - 1) and grid[row + 1]
                         and not grid[row + 1][col]) or row == len_grid - 1:
                     peri += 1  # if bottom of land is sea or not in map
-                if col - 1 > 0 and grid[row][col - 1]:  # for left
+                if col - 1 >= 0 and grid[row][col - 1]:  # for left
                     pass
                 else:
                     peri += 1
