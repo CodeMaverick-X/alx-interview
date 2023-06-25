@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-interview challange
+interview challange that gets the perimeter
+of an island
 """
 
 
