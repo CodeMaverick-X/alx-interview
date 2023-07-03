@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: Prime Game
+Module: Prime Game: test
 """
 
 
